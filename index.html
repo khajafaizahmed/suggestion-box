@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TCSS 142 Suggestion Box</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f6f7fb;
+        text-align: center;
+        padding: 50px;
+      }
+      textarea {
+        width: 80%;
+        max-width: 600px;
+        height: 150px;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+      }
+      button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        background-color: #4a67d6;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #3451b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Anonymous Suggestion Box</h1>
+    <p>Share your feedback or ideas below. Submissions are anonymous!</p>
+
+    <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+      <input type="hidden" name="_cc" value="SECOND_EMAIL@example.com" />
+      <input type="hidden" name="_next" value="https://YOUR_USERNAME.github.io/suggestion-box/thankyou.html" />
+      <textarea name="suggestion" placeholder="Your suggestion..." required></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
